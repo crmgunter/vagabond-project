@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import { Button } from 'semantic-ui-react'
+import GridExampleCelled from './GridExampleCelled';
 
 const LandingImage = styled.div`
 background-image: url("https://images.unsplash.com/photo-1483153597167-15375b89a20e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4c58a71f3c71525ceea94ee24c7d899e&auto=format&fit=crop&w=1053&q=80");
@@ -9,6 +10,9 @@ background-repeat: no-repeat;
 height: 100vh;
 width: 100vw;
 display: flex;
+`
+const HomeContainer = styled.div`
+text-align: center;
 `
 
 const LandingText = styled.div`
@@ -19,18 +23,24 @@ padding: 20px;
 color: white;
 border-radius: 10px;
 
-h1 {
+LandingText.h1 {
     font-size: 40px;
 }
 `
 const ButtonPadding = styled.div`
 margin: 5px;
 `
+const BodyContent = styled.div`
+width: 75vw;
+height: 100vh;
+text-align: center;
+margin: 20px auto;
+`
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <HomeContainer>
 
         <LandingImage>
         <LandingText>
@@ -45,11 +55,14 @@ myself, "I can't do it. <br/> I just can't do it. It's inappropriate. It's not n
         <Button type="submit">Log In</Button>
         </ButtonPadding>
         </LandingText>
-
         </LandingImage>
 
+        <BodyContent>
+            <GridExampleCelled/>
+        </BodyContent>
+
         
-            </div>
+            </HomeContainer>
         );
     }
 }
