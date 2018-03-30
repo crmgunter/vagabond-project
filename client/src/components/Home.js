@@ -13,6 +13,8 @@ display: flex;
 `
 const HomeContainer = styled.div`
 text-align: center;
+overflow-y: scroll; 
+overflow-x: hidden; 
 `
 
 const LandingText = styled.div`

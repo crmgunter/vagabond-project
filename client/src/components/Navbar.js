@@ -10,7 +10,7 @@ const Nav = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* position: fixed; */
+  z-index: 1;
 `;
 
 const LinkContainer = styled.div`
