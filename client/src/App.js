@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import styled from "styled-components";
+import City from './components/City'
 
 const Flex = styled.div`
   display: flex;
@@ -22,7 +23,7 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            {/* <Route exact path="/" component={City} /> */}
+            <Route exact path="/cities/:id" component={City} />
           </Switch>
           <Footer />
         </Flex>
