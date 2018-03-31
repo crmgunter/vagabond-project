@@ -22,6 +22,7 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
+            {/* <Route exact path="/" component={City} /> */}
           </Switch>
           <Footer />
         </Flex>

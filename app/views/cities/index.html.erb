@@ -1,0 +1,14 @@
+<h1>Cities <a href="/cities/new">(+)</a></h1>
+
+<ul>
+  <% @cities.each do |cities| %>
+    <li>
+      <a href="api/cities/<%= cities.id %>">
+        <%= cities.name %>
+        <%= cities.description %>
+        <%= cities.rating %>
+        <%= cities.post %>
+      </a>
+    </li>
+  <% end %>
+</ul>
