@@ -13,8 +13,8 @@ display: flex;
 `
 const HomeContainer = styled.div`
 text-align: center;
-overflow-y: scroll; 
-overflow-x: hidden; 
+overflow-y: scroll;
+overflow-x: hidden;
 `
 
 const LandingText = styled.div`
@@ -63,7 +63,7 @@ myself, "I can't do it. <br/> I just can't do it. It's inappropriate. It's not n
             <GridExampleCelled/>
         </BodyContent>
 
-        
+
             </HomeContainer>
         );
     }

@@ -10,6 +10,7 @@ const FooterStyle = styled.div`
   justify-content: flex-end;
   align-items: center;
   flex: 1 0 auto;
+  padding-right: 20px;
 `;
 
 class Footer extends Component {
