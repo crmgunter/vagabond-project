@@ -9,7 +9,7 @@
 #
 #
 def cities
-  city = {
+  city = [
     'atl' => {
       name: 'Welcome to Atlanta',
       image_url: 'https://unsplash.com/photos/F8mx5zBVbyA',
@@ -35,6 +35,6 @@ def cities
       rating: 4,
       post: "knsdlakwnemaowmpmgskd f s,mbjlbjbj hvuyv oi oij vyu f uygohjpjejnrfaf"
     }
-  }
+  ]
   city
 end
