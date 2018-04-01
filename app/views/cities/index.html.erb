@@ -1,13 +1,13 @@
 <h1>Cities</h1>
 
 <ul>
-  <% @cities.each do |cities| %>
+  <% @cities.each do |city| %>
     <li>
-      <a href="api/cities/<%= cities.id %>">
-        <%= cities.name %>
-        <%= cities.description %>
-        <%= cities.rating %>
-        <%= cities.post %>
+      <a href="/cities/<%= city.id %>">
+        <%= city.name %>
+        <%= city.description %>
+        <%= city.rating %>
+        <%= city.post %>
       </a>
     </li>
   <% end %>

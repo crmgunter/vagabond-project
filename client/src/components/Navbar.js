@@ -31,7 +31,7 @@ class Navbar extends Component {
       {/* site name goes here */}
       <LinkContainer>
         <LinkMargin>
-          <Link to="/cities/:id">Cities</Link>
+          <Link to="/cities/id">Cities</Link>
           {/* link to user Profile  & city page */}
         </LinkMargin>
         <LinkMargin>

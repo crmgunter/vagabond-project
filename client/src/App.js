@@ -6,7 +6,8 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import styled from "styled-components";
-import City from './components/City'
+import AllCities from './components/AllCities'
+import SingleCity from './components/SingleCity'
 
 const Flex = styled.div`
   display: flex;
@@ -23,7 +24,8 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/cities/:id" component={City} />
+            <Route exact path='/cities' component={AllCities}/>
+            <Route exact path="/cities/:id" component={SingleCity} />
           </Switch>
           <Footer />
         </Flex>
