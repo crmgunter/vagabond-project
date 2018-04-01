@@ -17,6 +17,7 @@ const LinkContainer = styled.div`
   display: flex;
   margin-right: 10px;
 `;
+
 const LinkMargin = styled.div`
   margin: 10px;
   a {
