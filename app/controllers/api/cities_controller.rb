@@ -36,10 +36,10 @@ def show
   render json: @city
 end
 
-# private
-#   def cities_params
-#     params.require(:id).permit(:name, :image_url, :description)
-    #//this is a private method we are creating and its saying take the cities params and require the cities column and then permit
-    #//the cities to get the name, photo and description
-# end
+private
+  def cities_params
+    params.require(:id).permit(:name, :image_url, :description)
+    # //this is a private method we are creating and its saying take the cities params and require the cities column and then permit
+    # //the cities to get the name, photo and description
+end
 end
